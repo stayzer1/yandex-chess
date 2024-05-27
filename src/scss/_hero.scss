@@ -1,0 +1,232 @@
+.hero {
+  padding-top: clamp(2.5rem, 1.989rem + 2.095vw, 3.875rem);
+  padding-bottom: 75px;
+}
+.hero-bkg-abs-max {
+  display: none;
+}
+.hero-abs {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  opacity: 0.2;
+}
+.hero__text {
+  max-width: 540px;
+  width: 100%;
+  z-index: 11;
+  position: relative;
+}
+.hero-bkg-abs-mobile {
+  display: none;
+}
+.hero__title {
+  color: #313131;
+  font-size: clamp(2.25rem, 1.693rem + 2.286vw, 3.75rem);
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  line-height: clamp(2.5rem, 1.896rem + 2.476vw, 4.125rem);
+  text-transform: uppercase;
+  z-index: 11;
+  position: relative;
+}
+.hero__subtitle {
+  color: #313131;
+  font-size: clamp(2.25rem, 1.693rem + 2.286vw, 3.75rem);
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  line-height: clamp(2.5rem, 1.896rem + 2.476vw, 4.125rem);
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 24px;
+  z-index: 11;
+  position: relative;
+}
+.hero__descr {
+  color: #313131;
+  font-size: 18px;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+  padding-bottom: clamp(2rem, 1.814rem + 0.762vw, 2.5rem);
+  z-index: 11;
+  position: relative;
+}
+.hero__btns {
+  z-index: 11;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 45px;
+}
+.hero__btn-sup {
+  padding: 20px;
+  max-width: 263px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 66px;
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 500;
+  line-height: 21px;
+  transition: 0.3s all ease-in;
+}
+.hero__btn-sup:hover {
+  background-color: #fbce51;
+  color: #1f1f1f;
+}
+.hero__btn-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 263px;
+  border: 2px solid #1f1f1f;
+  border-radius: 66px 66px 66px 66px;
+  color: #1f1f1f;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 500;
+  line-height: 21px;
+  transition: 0.3s all ease-in;
+}
+.hero__btn-info:hover {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+.hero__image-mobile {
+  display: none;
+}
+@media screen and (max-width: 1920px) {
+  .hero-bkg-abs {
+    display: none;
+  }
+  .hero-bkg-abs-max {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 6%;
+    z-index: 11;
+  }
+}
+@media screen and (max-width: 1750px) {
+  .hero-bkg-abs-max {
+    right: 2.5%;
+  }
+}
+@media screen and (max-width: 1650px) {
+  .hero-bkg-abs-max {
+    right: 0;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .hero-bkg-abs-max {
+    right: -5%;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .hero-bkg-abs-max {
+    right: -7%;
+  }
+}
+@media screen and (max-width: 1368px) {
+  .hero-bkg-abs-max {
+    display: none;
+  }
+  .hero-bkg-abs {
+    display: block;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  // .hero-bkg-abs {
+  //   display: none;
+  // }
+  // .hero__image-mobile {
+  //   display: block;
+  // }
+  .hero {
+    padding-bottom: 320px;
+  }
+  .hero__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-bkg-abs {
+    height: 450px;
+    bottom: 0;
+    top: auto;
+  }
+  .hero__btns {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__wrapper {
+    width: 100%;
+  }
+  .hero__text {
+    max-width: 450px;
+  }
+  .hero__btns {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero__btn-info {
+    max-width: 335px;
+    opacity: 0.9;
+    padding: 18px 20px;
+    br {
+      display: none;
+    }
+  }
+  .hero__btn-sup {
+    max-width: 335px;
+    padding: 18px 20px;
+    br {
+      display: none;
+    }
+  }
+  .hero {
+    padding-bottom: 280px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .hero {
+    padding-bottom: 240px;
+  }
+  .hero__text {
+    max-width: 400px;
+  }
+  .hero-bkg-abs {
+    display: none;
+  }
+  .hero-bkg-abs-mobile {
+    display: block;
+    position: absolute;
+    right: -10%;
+    bottom: 0;
+    z-index: 11;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero-bkg-abs-mobile {
+    right: -28%;
+  }
+}

@@ -1,0 +1,16 @@
+// Footer
+footer {
+  padding-top: 40px;
+  padding-bottom: clamp(3.75rem, 3.471rem + 1.143vw, 4.5rem);
+  display: block;
+  background: #e9ded4;
+}
+.footer {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.6;
+  line-height: 19px;
+  // line-height: 120%;
+  color: #313131;
+}

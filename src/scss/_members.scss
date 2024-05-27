@@ -1,0 +1,134 @@
+.members {
+  padding-bottom: clamp(6.25rem, 5.321rem + 3.81vw, 8.75rem);
+  .container {
+    overflow: hidden;
+  }
+}
+.members__title {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 400;
+  font-size: clamp(2.25rem, 1.832rem + 1.714vw, 3.375rem);
+
+  line-height: clamp(2.5rem, 1.92rem + 2.381vw, 4.063rem);
+  // line-height: 120%;
+  text-transform: uppercase;
+  color: #313131;
+  padding-bottom: 40px;
+}
+.members__slider {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+}
+.members__slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.members__slide {
+  flex: 0 0 clamp(20.938rem, 17.133rem + 15.608vw, 24.625rem);
+  max-width: clamp(20.938rem, 17.133rem + 15.608vw, 24.625rem);
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+.slide-enter {
+  transition: all 0.5s ease;
+  transform: translateX(100%); /* Анимация для входа слайда справа */
+}
+
+.slide-leave {
+  transition: all 0.5s ease;
+  transform: translateX(0); /* Анимация для выхода слайда налево */
+}
+.members__slide-info {
+  width: clamp(20.938rem, 17.133rem + 15.608vw, 24.625rem);
+  height: clamp(24.25rem, 19.478rem + 19.577vw, 28.875rem);
+  text-align: center;
+  img {
+    width: clamp(15.25rem, 10.349rem + 20.106vw, 20rem);
+    height: clamp(15.25rem, 10.349rem + 20.106vw, 20rem);
+  }
+}
+.members__slide-name {
+  padding-top: 28px;
+  padding-bottom: 6px;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+
+  line-height: 29px;
+  // line-height: 120%;
+  color: #313131;
+}
+.members__slide-descr {
+  margin-bottom: 20px;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+
+  line-height: 24px;
+  // line-height: 120%;
+  color: #313131;
+  opacity: 0.6;
+}
+.members__slide-link {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #3057a2;
+  border-radius: 62px;
+  padding: 12px;
+  width: 113px;
+  height: 35px;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 19px;
+  // line-height: 120%;
+  color: #3057a2;
+  transition: all 0.2s ease-in;
+}
+.members__slide-link:hover {
+  background: #3057a2;
+  color: #fff;
+}
+.members-pagination {
+  margin-top: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow {
+  cursor: pointer;
+  background-color: #313131;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in;
+}
+.arrow:hover {
+  background-color: #fbce51;
+}
+.prev {
+}
+.counter {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 14px;
+  padding-right: 14px;
+  line-height: 19px;
+  // line-height: 120%;
+  color: #313131;
+}
+.next {
+}

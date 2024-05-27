@@ -1,0 +1,309 @@
+.steps {
+  padding-bottom: clamp(7.5rem, 5.643rem + 7.619vw, 12.5rem);
+  position: relative;
+  overflow: hidden;
+}
+.steps__text {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: clamp(1.25rem, 0.461rem + 3.238vw, 3.375rem);
+}
+.steps__text-title {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 400;
+  font-size: clamp(2.25rem, 1.832rem + 1.714vw, 3.375rem);
+
+  line-height: clamp(2.5rem, 1.92rem + 2.381vw, 4.063rem);
+  // line-height: 120%;
+  text-transform: uppercase;
+  color: #313131;
+}
+.steps__text__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  span {
+    font-family: "Golos Text", sans-serif;
+    font-weight: 400;
+    font-size: clamp(1.125rem, 1.079rem + 0.19vw, 1.25rem);
+
+    line-height: clamp(1.375rem, 1.329rem + 0.19vw, 1.5rem);
+    // line-height: 120%;
+    color: #3057a2;
+  }
+}
+.steps__items {
+  display: grid;
+  grid-template-columns: repeat(3, 394px);
+  grid-template-rows: 112px 112px 136px;
+  gap: 20px;
+}
+.steps__item {
+  justify-content: start;
+  padding: 20px;
+  background: url(../img/bkg-item-steps.png) center (center/cover) no-repeat;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 0;
+}
+.steps__item:nth-child(3) {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  align-items: baseline;
+}
+.steps__item:nth-child(7) {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.steps__item-num {
+  border-radius: 60px;
+  min-width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+
+  line-height: 24px;
+  // line-height: 120%;
+  color: #313131;
+}
+.steps__item-text {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.125rem, 1.079rem + 0.19vw, 1.25rem);
+
+  line-height: clamp(1.375rem, 1.329rem + 0.19vw, 1.5rem);
+  // line-height: 120%;
+  color: #313131;
+}
+.steps__item:last-child {
+  .steps__item-text {
+    width: 420px;
+  }
+}
+.steps-abs-img {
+  position: absolute;
+  right: 4%;
+  bottom: 25%;
+}
+.steps__items-slider {
+  display: none;
+}
+.steps__items-slides {
+}
+.steps__items__slide {
+}
+.steps__items__slide-info {
+}
+.steps__item-num {
+}
+.steps__item-text {
+}
+.pagination {
+  display: none;
+}
+@media screen and (max-width: 1450px) {
+  .steps-abs-img {
+    width: 350px;
+    right: 2%;
+    bottom: 27%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .steps-abs-img {
+    width: 380px;
+    right: 2%;
+    bottom: 18%;
+  }
+  .steps__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .steps__item:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .steps__item:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .steps__item:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .steps__item:nth-child(4) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .steps__item:nth-child(5) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .steps__item:nth-child(6) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .steps__item:nth-child(7) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    .steps__item-text {
+      width: 630px;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .steps__item:nth-child(7) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    .steps__item-text {
+      width: 500px;
+    }
+  }
+  .steps-abs-img {
+    width: 305px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .steps__item:nth-child(7) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    .steps__item-text {
+      width: 450px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .steps-abs-img {
+    z-index: 10;
+    top: 15%;
+    width: 335px;
+    left: 30%;
+  }
+  .steps__text {
+    padding-bottom: 148px;
+  }
+  .steps__items-slider {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  .steps__items {
+    display: none;
+  }
+  .steps__items-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .steps__items__slide-info:first-child {
+    padding-bottom: 28px;
+  }
+  .steps__items__slide {
+    padding: 62px 20px 20px 20px;
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
+    gap: 28px;
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/bkg-item-steps.png) center (center/cover) no-repeat;
+  }
+  .pagination {
+    display: block;
+    text-align: center;
+    margin-top: 28px;
+  }
+  .pagination button {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0 5px;
+    width: 36px;
+    height: 36px;
+    background-color: #313131;
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+  }
+  .pagination button:disabled {
+    opacity: 0.2;
+  }
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    transition: background-color 0.3s ease; /* Добавляем анимацию для точек */
+    cursor: pointer;
+  }
+  .dot.active {
+    background-color: #313131; /* Изменяем цвет активной точки */
+  }
+  .steps__item-num {
+    max-width: 36px;
+  }
+  .steps__items__slide-info {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .steps-abs-img {
+    top: 18%;
+    left: 23%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .steps__text__wrapper {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 12px;
+    span {
+      width: 100%;
+    }
+  }
+  .steps__text {
+    padding-bottom: 120px;
+  }
+  .steps-abs-img {
+    top: 24%;
+    left: 21%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .steps-abs-img {
+    top: 24%;
+    left: 13%;
+  }
+}

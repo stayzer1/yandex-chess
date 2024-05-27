@@ -1,0 +1,39 @@
+// Header
+header {
+  overflow: hidden;
+  background-color: #e9ded4;
+  // background: url(../img/hero-bkg1.png) center (center/cover) no-repeat;
+  position: relative;
+  z-index: 10;
+}
+
+.hero-bkg-abs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 11;
+}
+.navbar {
+  padding-top: 26px;
+  z-index: 11;
+  position: relative;
+}
+.logo {
+}
+.logo__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.logo__wrapper-images {
+}
+.logo__wrapper-text {
+  color: #595653;
+  font-size: clamp(0.875rem, 0.829rem + 0.19vw, 1rem);
+  font-family: "Golos Text", sans-serif;
+  font-weight: 700;
+  line-height: 18px;
+}
+.burger {
+}
